@@ -235,7 +235,7 @@
             return;
         }
 
-        if(hour <= 8 || hour >= 16){
+        if(hour < 8 || hour >= 16){
             $("#time").html(hour + ":" + min + ":" + sec);
 
             $('#anwser').html('TAK');
